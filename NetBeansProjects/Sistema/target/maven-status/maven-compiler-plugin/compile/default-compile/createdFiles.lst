@@ -1,0 +1,5 @@
+com\mycompany\sistema\Sistema.class
+com\mycompany\sistema\ILogavel.class
+com\mycompany\sistema\Produto.class
+com\mycompany\sistema\Usuario.class
+com\mycompany\sistema\SistemaDeLog.class
