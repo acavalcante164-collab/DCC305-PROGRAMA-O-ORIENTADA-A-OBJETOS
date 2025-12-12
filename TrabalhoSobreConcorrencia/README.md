@@ -112,7 +112,7 @@ Se contador == 0: A Thread dorme e espera alguém devolver uma ficha.
 
 **Captura de Tela da saída do console no NetBeans:**
 
-![Imagem](Imagens/SaidaFinalRunReleaseSemafore.png)
+![Imagem](Imagens/SaidaFinal.png)
 
 ---
 
