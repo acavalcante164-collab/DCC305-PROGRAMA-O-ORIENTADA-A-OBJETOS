@@ -36,5 +36,25 @@ _Isso melhora a performance pois não prende as outras threads. O synchronized r
 
 - _Visibilidade de Memória: Quando o Agente X solta a chave, o Java garante que a alteração que ele fez na memória RAM (de 1 para 0) seja imediatamente visível para o Agente Y. Sem isso, o Agente Y poderia ler um valor "velho" do cache da CPU._
 
+- **Parte III: O "Desafio de Casa" (Wait e Notify)**
+
+Comunicação entre Threads: No slide 19 da aula 22 fala sobre wait e notify. As vezes, não basta sincronizar - as threads precisam conversar e coordenar suas ações. É o padrão Produtor_Consumidor.
+- Para que o wait() e o notify() funcionem, eles devem ser chamados dentro dos métodos do Objeto Compartilhado (no caso, a classe Onibus)
+
+**Captura de Tela do Algoritmo com Wait e notifyall:**
+
+![Imagem](Imagens/notify.png)
+
+**Legenda:** 
+_O método de venda espera (wait) se estiver lotado, e o método de cancelamento avisa (notifyAll) quando libera vaga_
+
+![Imagem](Imagens/cancelamento.png)
+
+**Legenda:**
+
+Classe Cancelamento (Produtor)
+Essa classe espera um pouco e depois libera uma vaga, chamando o notify indiretamente através do método do ônibus.
+
+
 
 
