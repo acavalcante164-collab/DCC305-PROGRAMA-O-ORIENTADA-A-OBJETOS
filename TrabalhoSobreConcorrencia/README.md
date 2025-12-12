@@ -95,20 +95,20 @@ release(): Devolve a ficha. Aumenta o contador e acorda a próxima thread da fil
 
 1. Entrada Imediata: Os Agentes 1, 2 e 3 mostrarão a mensagem  `ENTROU no servidor` quase ao mesmo tempo.
 
-1. Bloqueio: Os Agentes 4, 5 e 6 mostrarão `... chegou na fila`, mas ficarão travados. Eles não conseguem entrar porque o semáforo está zerado (3 permissões usadas).
+1. **Bloqueio:** Os Agentes 4, 5 e 6 mostrarão `... chegou na fila`, mas **ficarão travados**. Eles não conseguem entrar porque o semáforo está zerado (3 permissões usadas).
 
-1. Liberação: Assim que o Agente 1 terminar e chamar release() (🔴 desconectou), o Agente 4 (ou outro da fila) imediatamente ganhará a permissão e entrará.
+1. Liberação: Assim que o Agente 1 terminar e chamar `release()` (`desconectou`), o Agente 4 (ou outro da fila) imediatamente ganhará a permissão e entrará.
 
-**Resumo dos Métodos do Semaphore**
-new Semaphore(3): Inicializa o contador com 3 fichas.
+**Resumo dos Métodos do `Semaphore`**
+- `new Semaphore(3)`: Inicializa o contador com 3 fichas.
 
-acquire(): Pega uma ficha.
+- `acquire()` : Pega uma ficha.
 
 Se contador > 0: Diminui 1 e passa.
 
 Se contador == 0: A Thread dorme e espera alguém devolver uma ficha.
 
-release(): Devolve a ficha. Aumenta o contador e acorda a próxima thread da fila.
+- `release()`: Devolve a ficha. Aumenta o contador e acorda a próxima thread da fila.
 
 
 ## Conclusão:
