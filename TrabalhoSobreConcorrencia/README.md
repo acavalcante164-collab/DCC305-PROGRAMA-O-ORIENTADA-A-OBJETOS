@@ -71,7 +71,11 @@ Para implementar esse "Segurança da Balada" que limita o servidor a 3 conexões
 
 Neste código:
 
- [1]. Criamos um Semaphore(3) na main.
+1. Criamos um Semaphore(3) na main.
+
+1. sad
+
+1. asda
 
 
 
