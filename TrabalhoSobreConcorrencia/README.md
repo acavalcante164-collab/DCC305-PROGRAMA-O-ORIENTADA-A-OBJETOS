@@ -59,6 +59,20 @@ _O método de venda espera (wait) se estiver lotado, e o método de cancelamento
 _Classe Cancelamento (Produtor)_
 _Essa classe espera um pouco e depois libera uma vaga, chamando o notify indiretamente através do método do ônibus._
 
+---
+
+- **Parte IV: Controle de Fluxo com Semáforos**
+
+No Slide 22 (Aula 22) da inicio ao assunto semáforos, ele funciona como um controlador inteligente de acesso, gerenciando um contador de vagas disponíveis.
+
+Enquanto o synchronized controla a integridade dos dados (quem senta na cadeira), o Semaphore controla o fluxo de entrada (quem entra na sala).
+
+Para implementar esse "Segurança da Balada" que limita o servidor a 3 conexões simultâneas, precisamos modificar a classe do Agente para que ele respeite o semáforo antes de tentar falar com o ônibus.
+
+Neste código:
+
+ [1]. Criamos um Semaphore(3) na main.
+
 
 
 
