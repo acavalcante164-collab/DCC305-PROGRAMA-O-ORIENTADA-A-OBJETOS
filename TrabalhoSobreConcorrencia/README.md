@@ -30,11 +30,11 @@ Para usar um bloco sincronizado explícito protegendo apenas o necessário, deve
 ![Imagem](Imagens/SynchronizedSomenteNoBlocoCritico.png)
 
 **Legenda:** 
-_Isso melhora a performance pois não prende as outras threads. O synchronized resolve a inconsistência garantindo duas coisas:
+_Isso melhora a performance pois não prende as outras threads. O synchronized resolve a inconsistência garantindo duas coisas:_
 
-Exclusão Mútua: Apenas uma thread escreve na variável por vez.
+- _Exclusão Mútua: Apenas uma thread escreve na variável por vez._
 
-Visibilidade de Memória: Quando o Agente A solta a chave, o Java garante que a alteração que ele fez na memória RAM (de 1 para 0) seja imediatamente visível para o Agente B. Sem isso, o Agente B poderia ler um valor "velho" do cache da CPU._
+- _Visibilidade de Memória: Quando o Agente X solta a chave, o Java garante que a alteração que ele fez na memória RAM (de 1 para 0) seja imediatamente visível para o Agente Y. Sem isso, o Agente Y poderia ler um valor "velho" do cache da CPU._
 
 
 
