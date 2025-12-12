@@ -8,7 +8,10 @@
 ![Imagem](CenarioCaotico-RaceCondition/RaceCondition.png)
 
 **Legenda:**  
-  _O resultado acima foi montado no NetBeans e utiliza a lógica errada das Threads onde ocorre uma Condição de Corrida (Race Condition) quando a saída de um programa depende da ordem ou do timing não controlados em que múltiplas threads acessam e modificam dados compartilhados._
+  _O resultado acima foi montado no NetBeans e utiliza a lógica errada das Threads onde ocorre uma Condição de Corrida (Race Condition) quando a saída de um programa 
+  depende da ordem ou do timing não controlados em que múltiplas threads acessam e modificam dados compartilhados._
+
+--- 
 
 - **Parte II: A Solução com Blocos Sincronizados (Mutex)**
 
