@@ -73,9 +73,23 @@ Neste código:
 
 1. Criamos um Semaphore(3) na main.
 
-1. sad
+![Imagem](Imagens/SemaforoMain.png)
 
-1. asda
+**Legenda:**
+_Passamos esse semáforo para todos os Agentes._
+
+1. No run() do AgenteVenda, usamos acquire() (entrar na balada) e release() (sair da balada).
+
+![Imagem](Imagens/RunReleaseSemafore.png)
+
+**Legenda:**
+acquire(): Pega uma ficha.
+
+- Se contador > 0: Diminui 1 e passa.
+
+- Se contador == 0: A Thread dorme e espera alguém devolver uma ficha.
+
+release(): Devolve a ficha. Aumenta o contador e acorda a próxima thread da fila.
 
 
 
