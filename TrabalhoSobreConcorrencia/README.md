@@ -110,6 +110,11 @@ Se contador == 0: A Thread dorme e espera alguém devolver uma ficha.
 
 - `release()`: Devolve a ficha. Aumenta o contador e acorda a próxima thread da fila.
 
+**Captura de Tela da saída do console no NetBeans:**
+
+![Imagem](Imagens/SaidaFinalRunReleaseSemafore.png)
+
+---
 
 ## Conclusão:
 
