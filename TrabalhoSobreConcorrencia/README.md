@@ -12,7 +12,7 @@
 
 - **Parte II: A Solução com Blocos Sincronizados (Mutex)**
 
-No Slide 36 (Aula 21)  explica como proteger somente a seção critic, onde podemos sincronizar apenas a porção específica de código que realmente precisa de exclusão mútua, usando um objeto explícito como lock ( synchronized (this)) ...
+No Slide 36 (Aula 21)  explica como proteger somente a seção critica, onde podemos sincronizar apenas a porção específica de código que realmente precisa de exclusão mútua, usando um objeto explícito como lock ( synchronized (this)) ...
 
 **Captura de Tela do Algoritmo SEM as Implementações proposta:**
 
@@ -20,6 +20,17 @@ No Slide 36 (Aula 21)  explica como proteger somente a seção critic, onde pode
 
 **Legenda:** 
 _O perigo está entre o if e o assentosDisponiveis-- - a seção crítica desprotegida!_
+
+**A solução: Synchronized**
+
+Para usar um bloco sincronizado explícito protegendo apenas o necessário, deve envolver a verificação e a ação. O objeto de lock mais comum é o próprio this (a instância do ônibus) ou um objeto criado apenas para ser cadeado.
+
+**Captura de Tela do Algoritmo COM as Implementações corretas no Bloco:**
+
+![Imagem](Imagens/SynchronizedSomenteNoBlocoCritico.png)
+
+**Legenda:** 
+_Isso melhora a performance pois não prende as outras threads._
 
 
 
