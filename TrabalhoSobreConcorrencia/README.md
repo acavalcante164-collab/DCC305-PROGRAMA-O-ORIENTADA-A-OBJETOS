@@ -91,6 +91,15 @@ acquire(): Pega uma ficha.
 
 release(): Devolve a ficha. Aumenta o contador e acorda a próxima thread da fila.
 
+## Conclusão:
+
+Concluímos nesta tarefa uma série de práticas essenciais da programação concorrente em Java. Aprendemos a identificar os perigos da concorrência e a aplicar mecanismos de sincronização, coordenação entre threads e gerenciamento de capacidade para criar sistemas mais seguros e eficientes.
+
+---
+
+Relatório elaborado por: **Alonso Fernandes Cavalcante**  
+Última atualização: **12/12/2025**
+
 
 
 
