@@ -39,6 +39,8 @@ _Isso melhora a performance pois não prende as outras threads. O synchronized r
 
 - _Visibilidade de Memória: Quando o Agente X solta a chave, o Java garante que a alteração que ele fez na memória RAM (de 1 para 0) seja imediatamente visível para o Agente Y. Sem isso, o Agente Y poderia ler um valor "velho" do cache da CPU._
 
+---
+
 - **Parte III: O "Desafio de Casa" (Wait e Notify)**
 
 Comunicação entre Threads: No slide 19 da aula 22 fala sobre wait e notify. As vezes, não basta sincronizar - as threads precisam conversar e coordenar suas ações. É o padrão Produtor_Consumidor.
