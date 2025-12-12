@@ -3,9 +3,9 @@
 
 - **Parte I: O Caos (Race Condition)**
 
-**Captura de Tela do Algoritmo no NetBeans:**
+**Captura de Tela da saída do console no NetBeans:**
 
 ![Imagem](CenarioCaotico-RaceCondition/RaceCondition.png)
 
 **Legenda:**  
-  O resultado acima foi montado no NetBeans e utiliza portas lógicas para controlar cada segmento (A-G) com base na entrada binária.
+  O resultado acima foi montado no NetBeans e utiliza a lógica errada das Threads onde ocorre uma Condição de Corrida (Race Condition) quando a saída de um programa depende da ordem ou do timing não controlados em que múltiplas threads acessam e modificam dados compartilhados.
