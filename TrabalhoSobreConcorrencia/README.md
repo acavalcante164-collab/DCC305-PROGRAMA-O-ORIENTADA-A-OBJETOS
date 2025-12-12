@@ -56,9 +56,8 @@ _O método de venda espera (wait) se estiver lotado, e o método de cancelamento
 ![Imagem](Imagens/cancelamento.png)
 
 **Legenda:**
-
-Classe Cancelamento (Produtor)
-Essa classe espera um pouco e depois libera uma vaga, chamando o notify indiretamente através do método do ônibus.
+_Classe Cancelamento (Produtor)_
+_Essa classe espera um pouco e depois libera uma vaga, chamando o notify indiretamente através do método do ônibus._
 
 
 
